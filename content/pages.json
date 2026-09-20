@@ -1,0 +1,111 @@
+{
+  "hero": {
+    "eyebrow": "Reinigung in Liestal und Baselland",
+    "titleLines": [
+      "Sauber.",
+      "Zuverlässig.",
+      "Klarblick."
+    ],
+    "subtitle": "Wohnung, Büro, Fenster oder Umzug: Wir kommen vorbei, schauen es uns an und nennen Ihnen innerhalb von 24 Stunden einen Fixpreis. Ohne Überraschungen auf der Rechnung.",
+    "primaryCta": {
+      "label": "Offerte anfragen",
+      "href": "tel:+41610000000"
+    },
+    "secondaryCta": {
+      "label": "Leistungen ansehen",
+      "href": "#leistungen"
+    },
+    "facts": [
+      "Kostenlose Besichtigung",
+      "Versichert",
+      "Umweltschonende Mittel"
+    ],
+    "image": {
+      "src": "/images/hero.webp",
+      "alt": "Reinigungskraft wischt eine Glasfläche in einem hellen Raum.",
+      "placeholderLabel": "Hero-Foto"
+    }
+  },
+  "valueStrip": [],
+  "menuSection": {
+    "eyebrow": "Leistungen",
+    "title": "Was wir reinigen",
+    "intro": "Für Privathaushalte, Büros und Liegenschaften — einmalig oder im Abo. Preise als Richtwert, den Fixpreis gibt es nach der Besichtigung."
+  },
+  "ablauf": {
+    "eyebrow": "Ablauf",
+    "title": "In drei Schritten sauber",
+    "steps": [
+      {
+        "id": "s1",
+        "title": "Anrufen",
+        "text": "Sie sagen uns, was gereinigt werden soll und wie gross es ungefähr ist. Das dauert zwei Minuten — und Sie sprechen direkt mit dem Büro, nicht mit einer Zentrale.",
+        "fact": "2 Minuten"
+      },
+      {
+        "id": "s2",
+        "title": "Besichtigung und Offerte",
+        "text": "Wir kommen kostenlos vorbei, schauen uns alles an und schicken Ihnen innerhalb von 24 Stunden eine Offerte mit Fixpreis. Was drinsteht, gilt.",
+        "fact": "Fixpreis in 24 h"
+      },
+      {
+        "id": "s3",
+        "title": "Reinigung und Abnahme",
+        "text": "Wir kommen zum vereinbarten Termin, auch abends oder samstags. Am Schluss gehen wir gemeinsam durch — bei einer Umzugsreinigung mit Abgabegarantie.",
+        "fact": "Abnahme gemeinsam"
+      }
+    ]
+  },
+  "offerte": {
+    "eyebrow": "Offerte",
+    "title": "In zwei Minuten zur Offerte",
+    "text": "Rufen Sie uns an — wir brauchen nur vier Angaben, den Rest klären wir bei der Besichtigung.",
+    "items": [
+      "Was soll gereinigt werden? (Wohnung, Büro, Fenster, Umzug …)",
+      "Wie gross ungefähr? (Zimmer oder Quadratmeter)",
+      "Wann soll es fertig sein?",
+      "Wo? (Adresse oder Ort)"
+    ],
+    "note": "Bürozeiten Montag bis Freitag. Ausserhalb sprechen Sie auf den Beantworter — wir rufen am nächsten Werktag zurück."
+  },
+  "about": {
+    "eyebrow": "Über uns",
+    "title": "Wer bei Ihnen putzt",
+    "paragraphs": [
+      "Klarblick ist ein Reinigungsbetrieb aus Liestal. Daniela Keller hat ihn 2016 allein mit einem Auto und zwei Kunden gegründet; heute sind wir sechs Mitarbeitende, alle fest angestellt und versichert, keine Subunternehmer.",
+      "Wir arbeiten mit umweltschonenden Mitteln und Mikrofaser statt Chemie — das ist besser für Ihre Böden und für die Leute, die täglich damit arbeiten. Und Sie haben immer dieselbe Ansprechperson: Daniela nimmt das Telefon selbst ab."
+    ],
+    "stats": [
+      { "value": "2016", "label": "gegründet" },
+      { "value": "6", "label": "Mitarbeitende, fest angestellt" },
+      { "value": "24 h", "label": "bis zur Offerte" }
+    ],
+    "image": {
+      "src": "/images/team.webp",
+      "alt": "Reinigungskraft mit Handschuhen wischt eine Oberfläche, von der Seite aufgenommen.",
+      "placeholderLabel": "Über uns"
+    }
+  },
+  "visit": {
+    "eyebrow": "Einsatzgebiet und Kontakt",
+    "title": "Wo wir unterwegs sind",
+    "intro": "Unser Büro ist in Liestal. Einsätze fahren wir im ganzen Baselbiet und in Basel — innerhalb des Kreises ohne Anfahrtszuschlag.",
+    "gebiet": [
+      "Liestal", "Sissach", "Pratteln", "Frenkendorf", "Füllinsdorf", "Lausen",
+      "Bubendorf", "Gelterkinden", "Muttenz", "Basel"
+    ],
+    "infos": [
+      { "label": "Anfahrt", "value": "Im Kreis inbegriffen, sonst nach Distanz" },
+      { "label": "Einsatzzeiten", "value": "Mo–Sa, auch abends nach Absprache" },
+      { "label": "Zahlung", "value": "Rechnung, Twint oder Karte" },
+      { "label": "Versicherung", "value": "Betriebshaftpflicht bis 5 Mio. CHF" }
+    ]
+  },
+  "footer": {
+    "note": "Reinigung für Privat und Gewerbe. Büro an der Musterstrasse 12 in Liestal, Einsätze im ganzen Baselbiet.",
+    "legalLinks": [
+      { "label": "Impressum", "href": "/impressum" },
+      { "label": "Datenschutz", "href": "/datenschutz" }
+    ]
+  }
+}

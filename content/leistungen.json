@@ -1,0 +1,217 @@
+{
+  "currency": "CHF",
+  "note": "Alle Preise inklusive MwSt., Material und Anfahrt im Baselbiet. Stundenpreise gelten pro Reinigungskraft. Den genauen Preis erhalten Sie nach der kostenlosen Besichtigung als Fixpreis-Offerte — innerhalb von 24 Stunden.",
+  "categories": [
+    {
+      "id": "privat",
+      "name": "Privat",
+      "description": "Für Wohnung, Haus und Umzug",
+      "items": [
+        {
+          "id": "wohnungsreinigung",
+          "name": "Wohnungsreinigung",
+          "description": "Regelmässig oder einmalig: Küche, Bad, Böden, Staub. Wöchentlich, alle zwei Wochen oder monatlich.",
+          "price": 45,
+          "unit": "Std.",
+          "from": true,
+          "badges": [
+            "beliebt"
+          ],
+          "featured": true,
+          "available": true,
+          "image": {
+            "src": "/images/wohnung.webp",
+            "alt": "Sauber geputzte helle Küche mit Arbeitsfläche"
+          }
+        },
+        {
+          "id": "umzugsreinigung",
+          "name": "Umzugsreinigung mit Abgabegarantie",
+          "description": "Komplettreinigung inklusive Fenster, Storen, Backofen und Kühlschrank. Wir sind bei der Abgabe dabei — und kommen nach, falls die Verwaltung etwas beanstandet.",
+          "price": 650,
+          "unit": "pauschal",
+          "from": true,
+          "badges": [
+            "beliebt"
+          ],
+          "featured": true,
+          "available": true,
+          "image": {
+            "src": "/images/umzug.webp",
+            "alt": "Leere, frisch gereinigte Wohnung mit Parkettboden"
+          }
+        },
+        {
+          "id": "fensterreinigung",
+          "name": "Fensterreinigung",
+          "description": "Innen und aussen, inklusive Rahmen und Fensterbank. Storen und Lamellen auf Wunsch.",
+          "price": 8,
+          "unit": "Fenster",
+          "from": true,
+          "badges": [],
+          "featured": true,
+          "available": true,
+          "image": {
+            "src": "/images/fenster.webp",
+            "alt": "Fenster wird mit Abzieher gereinigt"
+          }
+        },
+        {
+          "id": "fruehlingsputz",
+          "name": "Frühlingsputz",
+          "description": "Einmal gründlich durch die ganze Wohnung: Schränke innen, Leuchten, Heizkörper, Fugen.",
+          "price": 45,
+          "unit": "Std.",
+          "from": true,
+          "badges": [],
+          "featured": false,
+          "available": true,
+          "image": null
+        },
+        {
+          "id": "haushalt-abo",
+          "name": "Haushalt-Abo",
+          "description": "Fester Termin, feste Reinigungskraft, Schlüssel bei uns im Tresor. Ab vier Einsätzen im Monat günstiger.",
+          "price": 42,
+          "unit": "Std.",
+          "from": true,
+          "badges": [
+            "neu"
+          ],
+          "featured": false,
+          "available": true,
+          "image": null
+        }
+      ]
+    },
+    {
+      "id": "gewerbe",
+      "name": "Gewerbe",
+      "description": "Für Büro, Praxis, Laden und Liegenschaft",
+      "items": [
+        {
+          "id": "bueroreinigung",
+          "name": "Büroreinigung",
+          "description": "Abends oder frühmorgens, ausserhalb Ihrer Arbeitszeit. Arbeitsplätze, Böden, Küche, Sanitär.",
+          "price": 42,
+          "unit": "Std.",
+          "from": true,
+          "badges": [
+            "beliebt"
+          ],
+          "featured": true,
+          "available": true,
+          "image": {
+            "src": "/images/buero.webp",
+            "alt": "Modernes Büro mit sauberen Tischen und Fenstern"
+          }
+        },
+        {
+          "id": "praxisreinigung",
+          "name": "Praxis- und Studioreinigung",
+          "description": "Nach Hygieneplan, mit dokumentierten Einsätzen. Für Arzt-, Physio- und Kosmetikpraxen.",
+          "price": 48,
+          "unit": "Std.",
+          "from": true,
+          "badges": [],
+          "featured": false,
+          "available": true,
+          "image": null
+        },
+        {
+          "id": "treppenhaus",
+          "name": "Treppenhausreinigung",
+          "description": "Wöchentlich oder alle zwei Wochen, inklusive Eingang, Briefkästen und Waschküche.",
+          "price": 120,
+          "unit": "Monat",
+          "from": true,
+          "badges": [],
+          "featured": false,
+          "available": true,
+          "image": null
+        },
+        {
+          "id": "schaufenster",
+          "name": "Schaufenster und Glasfassaden",
+          "description": "Regelmässig, damit die Auslage wirkt. Auch mit Hubarbeitsbühne.",
+          "price": null,
+          "badges": [],
+          "featured": false,
+          "available": true,
+          "image": null
+        },
+        {
+          "id": "unterhaltsvertrag",
+          "name": "Unterhaltsvertrag",
+          "description": "Alles aus einer Hand, fester Monatspreis, eine Ansprechperson. Nach Besichtigung.",
+          "price": null,
+          "badges": [],
+          "featured": false,
+          "available": true,
+          "image": null
+        }
+      ]
+    },
+    {
+      "id": "spezial",
+      "name": "Spezialreinigung",
+      "description": "Was nicht alle machen",
+      "items": [
+        {
+          "id": "bauendreinigung",
+          "name": "Bauendreinigung",
+          "description": "Nach Umbau oder Neubau: Staub, Kleberreste, Schutzfolien, Fenster. Grob- und Feinreinigung.",
+          "price": null,
+          "badges": [],
+          "featured": false,
+          "available": true,
+          "image": null
+        },
+        {
+          "id": "teppich",
+          "name": "Teppich- und Polsterreinigung",
+          "description": "Sprühextraktion, trocken innert weniger Stunden. Sofas, Stühle, Matratzen.",
+          "price": 25,
+          "unit": "m²",
+          "from": true,
+          "badges": [],
+          "featured": false,
+          "available": true,
+          "image": null
+        },
+        {
+          "id": "balkon",
+          "name": "Balkon und Terrasse",
+          "description": "Platten, Geländer, Glasbrüstungen — mit Heisswasser statt Chemie.",
+          "price": 180,
+          "unit": "pauschal",
+          "from": true,
+          "badges": [],
+          "featured": false,
+          "available": true,
+          "image": null
+        },
+        {
+          "id": "entsorgung",
+          "name": "Entrümpelung und Entsorgung",
+          "description": "Räumen, sortieren, fachgerecht entsorgen. Auch Keller, Estrich und Garage.",
+          "price": null,
+          "badges": [],
+          "featured": false,
+          "available": true,
+          "image": null
+        },
+        {
+          "id": "graffiti",
+          "name": "Graffiti-Entfernung",
+          "description": "Von Fassade, Beton und Glas, ohne Schaden am Untergrund.",
+          "price": null,
+          "badges": [],
+          "featured": false,
+          "available": true,
+          "image": null
+        }
+      ]
+    }
+  ]
+}

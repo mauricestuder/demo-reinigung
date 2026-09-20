@@ -1,0 +1,50 @@
+{
+  "name": "Klarblick",
+  "legalName": "Klarblick Reinigung GmbH",
+  "tagline": "Reinigung für Privat und Gewerbe",
+  "locality": "Liestal",
+  "priceRange": "CHF CHF",
+  "cuisine": [],
+  "address": {
+    "street": "Musterstrasse 12",
+    "zip": "4410",
+    "city": "Liestal",
+    "region": "Basel-Landschaft",
+    "country": "Schweiz",
+    "countryCode": "CH",
+    "hint": "Büro in Liestal, Einsätze im ganzen Baselbiet und in Basel.",
+    "mapsQuery": "Liestal",
+    "geo": null
+  },
+  "contact": {
+    "phone": "061 000 00 00",
+    "phoneHref": "+41610000000",
+    "email": "",
+    "whatsapp": ""
+  },
+  "social": [],
+  "seo": {
+    "siteUrl": "https://example.ch",
+    "title": "Klarblick – Reinigung in Liestal und Baselland",
+    "titleTemplate": "%s | Klarblick Reinigung Liestal",
+    "description": "Wohnungs-, Büro-, Fenster- und Umzugsreinigung in Liestal und im Baselbiet. Kostenlose Besichtigung, Fixpreis-Offerte innerhalb 24 Stunden – Beispielseite eines erfundenen Betriebs.",
+    "keywords": [
+      "Reinigung Liestal",
+      "Reinigungsfirma Baselland",
+      "Umzugsreinigung Liestal",
+      "Büroreinigung Baselland",
+      "Fensterreinigung Liestal"
+    ],
+    "ogImageAlt": "Klarblick – Reinigung in Liestal und Baselland"
+  },
+  "facts": {
+    "seating": "Kostenlose Besichtigung",
+    "takeaway": "Fixpreis-Offerte in 24 h",
+    "accessibility": "Versichert",
+    "payment": "Rechnung, Twint oder Karte",
+    "parking": "Umweltschonende Mittel",
+    "station": "Einsätze im ganzen Baselbiet"
+  },
+  "demoMode": true,
+  "demoNotice": "Beispielseite: «Klarblick» ist ein erfundener Betrieb. So könnte Ihre Website aussehen – gebaut von Maurice Studer, Ramlinsburg, im Rahmen einer Projektarbeit."
+}

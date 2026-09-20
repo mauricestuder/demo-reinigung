@@ -1,0 +1,18 @@
+{
+  "timezone": "Europe/Zurich",
+  "days": [
+    { "key": "mon", "label": "Montag", "shortLabel": "Mo", "closed": false,
+      "slots": [{ "open": "07:30", "close": "12:00" }, { "open": "13:30", "close": "17:30" }] },
+    { "key": "tue", "label": "Dienstag", "shortLabel": "Di", "closed": false,
+      "slots": [{ "open": "07:30", "close": "12:00" }, { "open": "13:30", "close": "17:30" }] },
+    { "key": "wed", "label": "Mittwoch", "shortLabel": "Mi", "closed": false,
+      "slots": [{ "open": "07:30", "close": "12:00" }, { "open": "13:30", "close": "17:30" }] },
+    { "key": "thu", "label": "Donnerstag", "shortLabel": "Do", "closed": false,
+      "slots": [{ "open": "07:30", "close": "12:00" }, { "open": "13:30", "close": "17:30" }] },
+    { "key": "fri", "label": "Freitag", "shortLabel": "Fr", "closed": false,
+      "slots": [{ "open": "07:30", "close": "12:00" }, { "open": "13:30", "close": "16:30" }] },
+    { "key": "sat", "label": "Samstag", "shortLabel": "Sa", "closed": true, "slots": [] },
+    { "key": "sun", "label": "Sonntag", "shortLabel": "So", "closed": true, "slots": [] }
+  ],
+  "note": "Bürozeiten. Einsätze auch abends und am Samstag nach Absprache."
+}
