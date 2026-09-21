@@ -40,7 +40,7 @@ export function MenuSection({ content, menu }: MenuSectionProps) {
         {menu.priceNotice && (
           <p
             data-reveal
-            className="mt-5 flex items-start gap-2 rounded-sm border border-accent/30 bg-accent/[0.07] px-3.5 py-2.5 text-sm font-semibold text-primary-text sm:mt-7 sm:gap-2.5 sm:px-4 sm:py-3 sm:text-[0.9375rem]"
+            className="mt-5 flex items-start gap-2 rounded-2xl border border-accent/30 bg-accent/[0.07] px-3.5 py-2.5 text-sm font-semibold text-primary-text sm:mt-7 sm:gap-2.5 sm:px-4 sm:py-3 sm:text-[0.9375rem]"
           >
             <Icon name="sparkle" size={20} className="mt-0.5 shrink-0" />
             {menu.priceNotice}
@@ -205,7 +205,7 @@ function MenuRow({ item, currency }: { item: MenuItem; currency: string }) {
   return (
     // Auf dem Handy ein Kästchen, ab 640 px wieder die klassische Kartenzeile:
     // kein Rahmen, dafür Punktlinie und Hover-Fläche wie ursprünglich.
-    <div className="h-full rounded-sm border border-border bg-card px-3 py-2.5 transition-colors duration-200 hover:border-primary sm:-mx-3 sm:h-auto sm:border-0 sm:bg-transparent sm:py-4 sm:hover:bg-card">
+    <div className="h-full rounded-2xl border border-border bg-card px-3 py-2.5 transition-colors duration-200 hover:border-primary sm:-mx-3 sm:h-auto sm:border-0 sm:bg-transparent sm:py-4 sm:hover:bg-card">
       <div className="flex flex-col sm:flex-row sm:items-baseline sm:gap-3">
         {/* break-words als harte Absicherung: Chrome trennt lange deutsche
             Komposita in schmalen Spalten auch mit hyphens-auto nicht. */}

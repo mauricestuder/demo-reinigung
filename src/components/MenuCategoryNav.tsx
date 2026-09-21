@@ -77,7 +77,7 @@ export function MenuCategoryNav({ categories }: MenuCategoryNavProps) {
                 href={`#kategorie-${category.id}`}
                 data-category={category.id}
                 aria-current={isActive ? "true" : undefined}
-                className={`inline-flex min-h-11 items-center whitespace-nowrap rounded-sm border px-4 font-semibold transition-colors duration-200 ${
+                className={`inline-flex min-h-11 items-center whitespace-nowrap rounded-full border px-4 font-semibold transition-colors duration-200 ${
                   isActive
                     ? "border-primary bg-primary text-on-primary"
                     : "border-border bg-card text-foreground hover:border-primary hover:text-primary"

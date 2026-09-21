@@ -14,7 +14,7 @@ mit Richtpreisen statt Speisekarte, Vertrauensleiste mit Fakten, Ablauf in
 drei Schritten, Offerte-Block, Einsatzgebiet mit Kreis auf der Karte.
 
 Gestaltung nach der UI/UX-Pro-Max-Datenbank, Profil «Home Services»:
-Flat Design (keine Schatten, keine Verläufe, 4 px Rundung), Trust Blue als
+Flat Design (keine Schatten, keine Verläufe), dafür grosszügige Rundungen, Trust Blue als
 Marke und Safety Orange nur für die eine Handlung (Offerte), Schriftpaar
 «Modern Professional» (Poppins + Open Sans), Seitenaufbau nach dem Muster
 «Trust & Authority + Conversion» (Hero → Fakten → Leistungen → Ablauf →

@@ -53,7 +53,7 @@ export function OpenStatus({
       // jetzt das eigene "inline-flex". Vorher entschied die Reihenfolge im
       // Stylesheet — und die Pille blieb auf schmalen Geräten sichtbar.
       className={cn(
-        "inline-flex min-h-8 items-center gap-2 rounded-sm border px-3 py-1 text-[0.8125rem] font-semibold",
+        "inline-flex min-h-8 items-center gap-2 rounded-full border px-3 py-1 text-[0.8125rem] font-semibold",
         isOpen
           ? onPhoto
             ? "border-success/40 bg-card text-success-text"
@@ -66,7 +66,7 @@ export function OpenStatus({
     >
       <span
         aria-hidden="true"
-        className={`h-2 w-2 shrink-0 rounded-sm ${
+        className={`h-2 w-2 shrink-0 rounded-full ${
           isOpen ? "animate-pulse-dot bg-success" : "bg-muted-foreground"
         }`}
       />

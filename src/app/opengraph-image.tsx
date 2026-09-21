@@ -44,7 +44,7 @@ export default async function OpengraphImage() {
             style={{
               width: 76,
               height: 76,
-              borderRadius: 8,
+              borderRadius: 22,
               background: "#1e40af",
               color: "#ffffff",
               fontSize: 46,

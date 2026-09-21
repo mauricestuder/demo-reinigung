@@ -28,7 +28,7 @@ const LABELS: Record<ItemBadge, string> = {
 export function MenuBadge({ badge }: { badge: ItemBadge }) {
   return (
     <span
-      className={`inline-flex items-center rounded-sm border px-2.5 py-0.5 text-[0.6875rem] font-bold uppercase tracking-[0.08em] ${STYLES[badge]}`}
+      className={`inline-flex items-center rounded-full border px-2.5 py-0.5 text-[0.6875rem] font-bold uppercase tracking-[0.08em] ${STYLES[badge]}`}
     >
       {LABELS[badge]}
     </span>

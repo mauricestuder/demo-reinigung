@@ -50,7 +50,7 @@ export function Visit({ content, site, hours }: VisitProps) {
             {/* Offerte. Die Nummer steht zwar auch im Kopfbereich und im
                 Offertblock weiter oben — hier bekommt der Anruf noch einmal
                 einen Grund, direkt neben den Bürozeiten. */}
-            <div className="rounded-sm border border-primary/25 bg-primary/[0.07] p-6 sm:p-8">
+            <div className="rounded-2xl border border-primary/25 bg-primary/[0.07] p-6 sm:p-8">
               <p className="text-[0.6875rem] font-semibold uppercase tracking-[0.2em] text-primary-text">
                 Offerte
               </p>
@@ -111,7 +111,7 @@ export function Visit({ content, site, hours }: VisitProps) {
                     {content.gebiet.map((ort) => (
                       <li
                         key={ort}
-                        className="rounded-sm border border-border bg-surface-warm px-2.5 py-1 text-sm font-medium"
+                        className="rounded-full border border-border bg-surface-warm px-2.5 py-1 text-sm font-medium"
                       >
                         {ort}
                       </li>
@@ -143,7 +143,7 @@ export function Visit({ content, site, hours }: VisitProps) {
                 Bewusst nur ein Bild, kein Link und keine Beschriftung darauf:
                 Die Adresse steht vollständig im Textblock darüber, der Aufruf
                 zu Google Maps darunter. */}
-            <div className="relative mt-7 aspect-[16/9] overflow-hidden rounded-sm border border-border sm:aspect-[16/7]">
+            <div className="relative mt-7 aspect-[16/9] overflow-hidden rounded-2xl border border-border sm:aspect-[16/7]">
               <Image
                 src={assetPath("/images/karte.webp")}
                 alt="Karte des Baselbiets mit Liestal in der Mitte. Der blaue Kreis zeigt das Einsatzgebiet ohne Anfahrtszuschlag."

@@ -87,7 +87,7 @@ export function Hero({ hero, site, hours }: HeroProps) {
             >
               {hero.facts.map((fact) => (
                 <li key={fact} className="flex items-center gap-2 text-[0.9375rem] font-semibold">
-                  <span className="grid h-6 w-6 shrink-0 place-items-center rounded-sm bg-secondary text-primary-text">
+                  <span className="grid h-6 w-6 shrink-0 place-items-center rounded-full bg-secondary text-primary-text">
                     <Icon name="check" size={15} />
                   </span>
                   {fact}
@@ -104,8 +104,7 @@ export function Hero({ hero, site, hours }: HeroProps) {
             </p>
           </div>
 
-          {/* Foto mit feinem Rahmen, ohne Schatten (Flat Design). Ein blauer
-              Balken links unten verankert es an der Marke. */}
+          {/* Foto mit feinem Rahmen und grosser Rundung, ohne Schatten. */}
           <div
             data-reveal
             style={{ "--reveal-delay": "160ms" } as React.CSSProperties}
@@ -117,10 +116,8 @@ export function Hero({ hero, site, hours }: HeroProps) {
                 ratio={null}
                 priority
                 sizes="(min-width: 1024px) 50vw, 92vw"
-                className="aspect-[4/3] rounded-sm border border-border lg:aspect-[5/4]"
+                className="aspect-[4/3] rounded-3xl border border-border lg:aspect-[5/4]"
               />
-              <div aria-hidden="true" className="absolute -bottom-3 -left-3 h-24 w-3 bg-primary sm:h-32" />
-              <div aria-hidden="true" className="absolute -bottom-3 -left-3 h-3 w-24 bg-primary sm:w-32" />
             </div>
           </div>
         </div>

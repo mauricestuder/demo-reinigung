@@ -90,7 +90,7 @@ export function Header({ site, hours }: HeaderProps) {
               Ohne ihn sieht die Wortmarke nicht anklickbar aus. */}
           <a
             href="#top"
-            className="flex min-h-11 items-center rounded-sm opacity-100 transition-opacity duration-200 hover:opacity-70"
+            className="flex min-h-11 items-center rounded-xl opacity-100 transition-opacity duration-200 hover:opacity-70"
             aria-label={`${site.name} — zum Seitenanfang`}
           >
             <Logo />
@@ -102,7 +102,7 @@ export function Header({ site, hours }: HeaderProps) {
                 <li key={item.href}>
                   <a
                     href={item.href}
-                    className="inline-flex min-h-11 items-center whitespace-nowrap rounded-sm px-3.5 font-display font-medium text-foreground transition-colors duration-200 hover:text-primary"
+                    className="inline-flex min-h-11 items-center whitespace-nowrap rounded-full px-3.5 font-display font-medium text-foreground transition-colors duration-200 hover:text-primary"
                   >
                     {item.label}
                   </a>
@@ -126,7 +126,7 @@ export function Header({ site, hours }: HeaderProps) {
               ref={toggleRef}
               type="button"
               onClick={() => setMenuOpen((open) => !open)}
-              className="grid h-12 w-12 cursor-pointer place-items-center rounded-sm border-2 border-border bg-card text-foreground transition-colors duration-200 hover:border-primary hover:text-primary lg:hidden"
+              className="grid h-12 w-12 cursor-pointer place-items-center rounded-full border-2 border-border bg-card text-foreground transition-colors duration-200 hover:border-primary hover:text-primary lg:hidden"
               aria-expanded={menuOpen}
               aria-controls="mobile-nav"
               aria-label={menuOpen ? "Menü schliessen" : "Menü öffnen"}

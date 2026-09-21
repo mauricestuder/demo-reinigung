@@ -74,8 +74,9 @@
   --font-sans: var(--font-sans-family), "Helvetica Neue", Arial, sans-serif;
 
   /* --- Radien und Bewegung -------------------------------------- */
-  /* Flat Design: 0–4 px Rundung, keine Schatten, 150–200 ms Uebergaenge. */
-  --radius-card: 0.25rem;
+  /* Flat, aber weich: keine Schatten, dafuer grosszuegige Rundungen —
+     Karten 1.25 rem, Bloecke 2 rem, Knoepfe und Pillen ganz rund. */
+  --radius-card: 1.25rem;
   --ease-out-soft: cubic-bezier(0.22, 1, 0.36, 1);
 }
 
@@ -153,7 +154,7 @@
   :focus-visible {
     outline: 3px solid var(--color-ring);
     outline-offset: 3px;
-    border-radius: 6px;
+    border-radius: 999px;
   }
 
   ::selection {
@@ -241,8 +242,8 @@
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
-    padding: 0.875rem 1.5rem;
-    border-radius: 4px;
+    padding: 0.875rem 1.625rem;
+    border-radius: 999px;
     font-family: var(--font-display);
     font-size: 1rem;
     font-weight: 600;

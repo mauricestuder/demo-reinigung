@@ -33,7 +33,7 @@ export function About({ content }: { content: AboutContent }) {
               image={content.image}
               ratio={null}
               sizes="(min-width: 1024px) 40vw, 92vw"
-              className="aspect-[16/10] rounded-sm border border-border lg:aspect-[5/4]"
+              className="aspect-[16/10] rounded-3xl border border-border lg:aspect-[5/4]"
             />
           </div>
 

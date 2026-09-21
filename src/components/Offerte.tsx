@@ -28,7 +28,7 @@ export function Offerte({ content, site }: OfferteProps) {
       <div className="container-page">
         <div
           data-reveal
-          className="overflow-hidden rounded-sm bg-primary text-on-primary"
+          className="overflow-hidden rounded-[2rem] bg-primary text-on-primary"
         >
           <div className="grid gap-8 p-6 sm:p-10 lg:grid-cols-12 lg:gap-12 lg:p-14">
             <div className="lg:col-span-6">
@@ -59,9 +59,9 @@ export function Offerte({ content, site }: OfferteProps) {
                 {content.items.map((item, index) => (
                   <li
                     key={item}
-                    className="flex items-start gap-3 rounded-sm border border-on-primary/25 px-4 py-3"
+                    className="flex items-start gap-3 rounded-2xl border border-on-primary/25 px-4 py-3"
                   >
-                    <span className="tnum grid h-7 w-7 shrink-0 place-items-center rounded-sm bg-on-primary font-display text-sm font-semibold text-primary-text">
+                    <span className="tnum grid h-7 w-7 shrink-0 place-items-center rounded-full bg-on-primary font-display text-sm font-semibold text-primary-text">
                       {index + 1}
                     </span>
                     <span className="pt-0.5 font-medium">{item}</span>

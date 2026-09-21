@@ -30,7 +30,7 @@ export function Ablauf({ content }: { content: AblaufContent }) {
             >
               <article className="card flex h-full flex-col border p-5 sm:p-7">
                 <div className="flex items-center gap-4 sm:block">
-                  <span className="tnum grid h-12 w-12 shrink-0 place-items-center rounded-sm bg-primary font-display text-xl font-semibold text-on-primary sm:h-14 sm:w-14 sm:text-2xl">
+                  <span className="tnum grid h-12 w-12 shrink-0 place-items-center rounded-2xl bg-primary font-display text-xl font-semibold text-on-primary sm:h-14 sm:w-14 sm:text-2xl">
                     {index + 1}
                   </span>
                   <h3 className="min-w-0 font-display text-lg leading-tight sm:mt-6 sm:text-2xl">
@@ -44,7 +44,7 @@ export function Ablauf({ content }: { content: AblaufContent }) {
 
                 {step.fact && (
                   <div className="mt-auto pt-5">
-                    <span className="inline-flex rounded-sm bg-secondary px-3 py-1.5 text-xs font-semibold text-on-secondary">
+                    <span className="inline-flex rounded-full bg-secondary px-3 py-1.5 text-xs font-semibold text-on-secondary">
                       {step.fact}
                     </span>
                   </div>
