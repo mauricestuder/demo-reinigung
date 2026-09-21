@@ -1,0 +1,5 @@
+Kartenausschnitt Baselbiet mit Liestal in der Mitte
+Koordinaten: 47.4842, 7.7345 (Zoom 11), Kreis 12 km
+Erzeugt mit scripts/build-map.mjs: Rohdaten von der Overpass-API,
+selbst gezeichnet, ohne Beschriftung
+Kartendaten (c) OpenStreetMap-Mitwirkende, ODbL

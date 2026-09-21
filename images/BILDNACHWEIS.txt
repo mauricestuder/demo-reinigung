@@ -1,0 +1,30 @@
+Bildnachweis
+============
+
+Alle Fotos stammen von Pexels und stehen unter der Pexels-Lizenz:
+kostenlos, auch kommerziell nutzbar, Bearbeitung erlaubt, keine
+Namensnennung erforderlich (https://www.pexels.com/license/).
+
+Es sind PLATZHALTER fuer einen erfundenen Betrieb. Bei einem echten
+Kunden werden sie durch dessen eigene Aufnahmen ersetzt.
+
+Datei           Quelle                      Verwendung
+--------------  --------------------------  ---------------------------------
+hero.webp       pexels.com/photo/6197111    Kopfbereich (1500x1200)
+team.webp       pexels.com/photo/4239040    Ueber uns (1200x900)
+wohnung.webp    pexels.com/photo/7587737    Leistungen, Wohnungsreinigung
+umzug.webp      pexels.com/photo/7587883    Leistungen, Umzugsreinigung
+fenster.webp    pexels.com/photo/31435403   Leistungen, Fensterreinigung
+buero.webp      pexels.com/photo/7534210    Leistungen, Bueroreinigung
+
+Bearbeitung: mittig auf 4:3 bzw. 5:4 (Kopfbereich) beschnitten, als WebP
+gespeichert. Keine Farbangleichung noetig — alle Aufnahmen sind hell und
+neutral.
+
+Personen: Auf hero.webp steht ein Fensterputzer klein im Bild, seitlich
+und mit Blick zur Scheibe, nicht erkennbar. team.webp und fenster.webp
+zeigen nur Haende in Handschuhen. Sonst keine Personen, nirgends fremde
+Marken.
+
+karte.webp ist kein Foto, sondern ein selbst gezeichnetes Kartenbild aus
+OpenStreetMap-Daten (siehe karte.txt und scripts/build-map.mjs).
