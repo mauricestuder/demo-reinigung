@@ -168,7 +168,7 @@ export interface MenuItem {
   /**
    * Einheit hinter dem Preis, z. B. "Std.", "Fenster", "m²", "pauschal".
    * Dienstleistungen haben selten einen Stückpreis — ohne Einheit stünde
-   * "CHF 45" da, als wäre die ganze Wohnung gemeint.
+   * "CHF 38.–" da, als wäre die ganze Wohnung gemeint.
    */
   unit?: string;
   /** Zeigt "ab" vor dem Preis, auch ohne Varianten (Richtpreis). */

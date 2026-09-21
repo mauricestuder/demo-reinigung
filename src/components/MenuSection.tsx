@@ -3,7 +3,7 @@ import { MenuBadge } from "./MenuBadge";
 import { MenuCategoryNav } from "./MenuCategoryNav";
 import { SmartImage } from "./SmartImage";
 import { getFeaturedItems } from "@/lib/content";
-import { formatPrice } from "@/lib/format";
+import { formatPrice, formatRichtpreis } from "@/lib/format";
 import type { Menu, MenuItem, MenuSectionContent } from "@/lib/types";
 
 interface MenuSectionProps {
@@ -14,10 +14,10 @@ interface MenuSectionProps {
 /**
  * Leistungen — der Hauptinhalt der Seite. Technisch die Speisekarte der
  * Restaurant-Vorlage: Kategorien mit Einträgen und Preisen, hier mit Einheit
- * ("ab CHF 45 / Std.") statt Stückpreis.
+ * ("ab CHF 38.– / Std.") statt Stückpreis.
  *
  * Auf dem Handy eine Spalte: Leistungsnamen wie „Praxis- und Studioreinigung"
- * und Preise mit Einheit („ab CHF 120.00 / Monat") sind zu lang für zwei
+ * und Preise mit Einheit („ab CHF 95.– / Monat") sind zu lang für zwei
  * Spalten auf 375 px — sie brachen mitten im Wort. Die vier Karten mit Foto
  * stehen ab 480 px zu zweit, die Liste ab 1024 px.
  */
@@ -176,26 +176,26 @@ export function MenuSection({ content, menu }: MenuSectionProps) {
 }
 
 /**
- * Preis mit "ab", Währung und Einheit: "ab CHF 45.00 / Std.". Ohne Preis
- * steht "auf Anfrage" — bei Bauendreinigung oder Unterhaltsvertrag gibt es
- * keinen Richtwert, der nicht in die Irre führt.
+ * Richtpreis wie auf einem Aushang: "ab CHF 38.– / Std." — "ab", Währung und
+ * Einheit klein und grau, die Zahl gross. Ohne Preis steht "auf Anfrage": bei
+ * Bauendreinigung oder Unterhaltsvertrag gibt es keinen Richtwert, der nicht
+ * in die Irre führt.
  */
 function Preis({ item, currency }: { item: MenuItem; currency: string }) {
   if (item.price === null) {
     return <span className="text-sm font-semibold text-muted-foreground">auf Anfrage</span>;
   }
   const ab = item.from || Boolean(item.variants?.length);
+  const klein = "text-xs font-medium text-muted-foreground";
   return (
-    <>
-      {ab && <span className="mr-1 text-xs font-semibold text-muted-foreground">ab</span>}
-      <span className="mr-1 text-xs font-semibold text-muted-foreground">{currency}</span>
-      {formatPrice(item.price)}
+    <span className="inline-flex items-baseline gap-1 whitespace-nowrap">
+      {ab && <span className={klein}>ab</span>}
+      <span className={klein}>{currency}</span>
+      <span className="text-[1.15em]">{formatRichtpreis(item.price)}</span>
       {item.unit && (
-        <span className="ml-1 text-xs font-semibold text-muted-foreground">
-          {item.unit === "pauschal" ? "pauschal" : `/ ${item.unit}`}
-        </span>
+        <span className={klein}>{item.unit === "pauschal" ? "pauschal" : `/ ${item.unit}`}</span>
       )}
-    </>
+    </span>
   );
 }
 

@@ -9,6 +9,15 @@ export function formatPrice(value: number | null): string {
   return priceFormatter.format(value);
 }
 
+/**
+ * Richtpreis wie auf einem Aushang: ganze Franken als "38.–", sonst "12.50".
+ * Das ".00" sieht nach Kasse aus, nicht nach Angebot.
+ */
+export function formatRichtpreis(value: number): string {
+  if (Number.isInteger(value)) return `${priceFormatter.format(value).slice(0, -3)}.–`;
+  return priceFormatter.format(value);
+}
+
 /** Telefonnummer für tel:-Links bereinigen. */
 export function telHref(phone: string): string {
   return `tel:${phone.replace(/[^\d+]/g, "")}`;
