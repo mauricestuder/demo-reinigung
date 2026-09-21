@@ -18,7 +18,9 @@ interface OfferteProps {
  * Anruf kurz bleibt.
  *
  * Die Farben sind hier umgekehrt (weisse Schrift auf Blau), damit der Block
- * sich vom Rest der hellen Seite abhebt. Weiss auf #1d4ed8 erreicht 6.3:1.
+ * sich vom Rest der hellen Seite abhebt. Weiss auf #1e40af erreicht 8.7:1.
+ * Der Knopf ist orange — die einzige Stelle, an der das Orange auf Blau
+ * steht; Weiss auf #c2410c erreicht 5.1:1.
  */
 export function Offerte({ content, site }: OfferteProps) {
   return (
@@ -26,7 +28,7 @@ export function Offerte({ content, site }: OfferteProps) {
       <div className="container-page">
         <div
           data-reveal
-          className="overflow-hidden rounded-2xl bg-primary text-on-primary shadow-[0_30px_70px_-30px_rgba(29,78,216,0.6)]"
+          className="overflow-hidden rounded-sm bg-primary text-on-primary"
         >
           <div className="grid gap-8 p-6 sm:p-10 lg:grid-cols-12 lg:gap-12 lg:p-14">
             <div className="lg:col-span-6">
@@ -38,7 +40,7 @@ export function Offerte({ content, site }: OfferteProps) {
 
               <a
                 href={telHref(site.contact.phoneHref)}
-                className="btn mt-7 bg-on-primary text-primary-text shadow-[0_10px_24px_-10px_rgba(0,0,0,0.5)] hover:bg-secondary"
+                className="btn btn-primary mt-7"
               >
                 <Icon name="phone" size={20} />
                 <span className="tnum">{site.contact.phone}</span>
@@ -57,9 +59,9 @@ export function Offerte({ content, site }: OfferteProps) {
                 {content.items.map((item, index) => (
                   <li
                     key={item}
-                    className="flex items-start gap-3 rounded-xl bg-on-primary/10 px-4 py-3"
+                    className="flex items-start gap-3 rounded-sm border border-on-primary/25 px-4 py-3"
                   >
-                    <span className="tnum grid h-7 w-7 shrink-0 place-items-center rounded-full bg-on-primary text-sm font-bold text-primary-text">
+                    <span className="tnum grid h-7 w-7 shrink-0 place-items-center rounded-sm bg-on-primary font-display text-sm font-semibold text-primary-text">
                       {index + 1}
                     </span>
                     <span className="pt-0.5 font-medium">{item}</span>

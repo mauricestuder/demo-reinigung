@@ -102,7 +102,7 @@ export function Header({ site, hours }: HeaderProps) {
                 <li key={item.href}>
                   <a
                     href={item.href}
-                    className="inline-flex min-h-11 items-center whitespace-nowrap rounded-lg px-3.5 font-semibold text-foreground transition-colors duration-200 hover:text-primary"
+                    className="inline-flex min-h-11 items-center whitespace-nowrap rounded-sm px-3.5 font-display font-medium text-foreground transition-colors duration-200 hover:text-primary"
                   >
                     {item.label}
                   </a>
@@ -126,7 +126,7 @@ export function Header({ site, hours }: HeaderProps) {
               ref={toggleRef}
               type="button"
               onClick={() => setMenuOpen((open) => !open)}
-              className="grid h-12 w-12 cursor-pointer place-items-center rounded-lg border-2 border-border bg-card text-foreground transition-colors duration-200 hover:border-primary hover:text-primary lg:hidden"
+              className="grid h-12 w-12 cursor-pointer place-items-center rounded-sm border-2 border-border bg-card text-foreground transition-colors duration-200 hover:border-primary hover:text-primary lg:hidden"
               aria-expanded={menuOpen}
               aria-controls="mobile-nav"
               aria-label={menuOpen ? "Menü schliessen" : "Menü öffnen"}
@@ -160,7 +160,7 @@ export function Header({ site, hours }: HeaderProps) {
         id="mobile-nav"
         inert={!menuOpen}
         aria-hidden={!menuOpen}
-        className={`fixed inset-y-0 right-0 z-40 w-[min(17.5rem,72vw)] border-l border-border bg-background shadow-[-18px_0_50px_-24px_rgba(15,23,42,0.35)] transition-transform duration-300 ease-out lg:hidden ${
+        className={`fixed inset-y-0 right-0 z-40 w-[min(17.5rem,72vw)] border-l-2 border-primary bg-background transition-transform duration-300 ease-out lg:hidden ${
           menuOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >

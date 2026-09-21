@@ -10,8 +10,8 @@ interface HeroProps {
 }
 
 /**
- * Kopfbereich: Text links, Foto rechts in einer abgerundeten Karte — auf
- * hellem Grund, kein Foto hinter der Schrift. Dadurch braucht es keinen
+ * Kopfbereich: Text links, Foto rechts mit feinem Rahmen — auf hellem
+ * Grund, kein Foto hinter der Schrift. Dadurch braucht es keinen
  * Schleier und keine Kontrastmessung: Alle Schrift steht auf Weiss.
  *
  * Die Offerte ist die primäre Aktion, die Leistungen die zweite: Wer eine
@@ -25,19 +25,9 @@ export function Hero({ hero, site, hours }: HeroProps) {
   return (
     <section
       id="top"
-      className="relative isolate overflow-hidden"
+      className="relative isolate overflow-hidden bg-background"
       style={{ paddingTop: "calc(var(--header-height) + 2.5rem)" }}
     >
-      {/* Ein Hauch Blau oben rechts, sonst Weiss. Statisch und damit gratis. */}
-      <div
-        aria-hidden="true"
-        className="pointer-events-none absolute inset-0 -z-10"
-        style={{
-          background:
-            "radial-gradient(70% 60% at 85% 0%, rgba(29,78,216,0.09), transparent 60%), linear-gradient(180deg, #ffffff 0%, #f4f7fb 100%)",
-        }}
-      />
-
       <div className="container-page pb-14 sm:pb-20">
         <div className="grid items-center gap-10 lg:grid-cols-12 lg:gap-14">
           {/* Textspalte */}
@@ -97,7 +87,7 @@ export function Hero({ hero, site, hours }: HeroProps) {
             >
               {hero.facts.map((fact) => (
                 <li key={fact} className="flex items-center gap-2 text-[0.9375rem] font-semibold">
-                  <span className="grid h-6 w-6 shrink-0 place-items-center rounded-full bg-success/10 text-success">
+                  <span className="grid h-6 w-6 shrink-0 place-items-center rounded-sm bg-secondary text-primary-text">
                     <Icon name="check" size={15} />
                   </span>
                   {fact}
@@ -114,21 +104,24 @@ export function Hero({ hero, site, hours }: HeroProps) {
             </p>
           </div>
 
-          {/* Foto: abgerundet, mit weichem Schatten, leicht nach rechts
-              versetzt — das Bild soll wie eingelegt wirken, nicht wie ein
-              Hintergrund. */}
+          {/* Foto mit feinem Rahmen, ohne Schatten (Flat Design). Ein blauer
+              Balken links unten verankert es an der Marke. */}
           <div
             data-reveal
             style={{ "--reveal-delay": "160ms" } as React.CSSProperties}
             className="lg:col-span-6"
           >
-            <SmartImage
-              image={hero.image}
-              ratio={null}
-              priority
-              sizes="(min-width: 1024px) 50vw, 92vw"
-              className="aspect-[4/3] rounded-2xl border border-border shadow-[0_30px_70px_-30px_rgba(15,23,42,0.35)] lg:aspect-[5/4]"
-            />
+            <div className="relative">
+              <SmartImage
+                image={hero.image}
+                ratio={null}
+                priority
+                sizes="(min-width: 1024px) 50vw, 92vw"
+                className="aspect-[4/3] rounded-sm border border-border lg:aspect-[5/4]"
+              />
+              <div aria-hidden="true" className="absolute -bottom-3 -left-3 h-24 w-3 bg-primary sm:h-32" />
+              <div aria-hidden="true" className="absolute -bottom-3 -left-3 h-3 w-24 bg-primary sm:w-32" />
+            </div>
           </div>
         </div>
       </div>

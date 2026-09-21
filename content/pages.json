@@ -27,6 +27,12 @@
     }
   },
   "valueStrip": [],
+  "proof": [
+    { "id": "p1", "icon": "calendar", "value": "Seit 2016", "label": "in Liestal" },
+    { "id": "p2", "icon": "users", "value": "6 Mitarbeitende", "label": "fest angestellt, keine Subunternehmer" },
+    { "id": "p3", "icon": "shield", "value": "Versichert", "label": "Betriebshaftpflicht bis 5 Mio. CHF" },
+    { "id": "p4", "icon": "clock", "value": "Fixpreis in 24 h", "label": "nach kostenloser Besichtigung" }
+  ],
   "menuSection": {
     "eyebrow": "Leistungen",
     "title": "Was wir reinigen",

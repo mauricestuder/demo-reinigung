@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Inter, Manrope } from "next/font/google";
+import { Open_Sans, Poppins } from "next/font/google";
 
 import "./globals.css";
 
@@ -10,17 +10,19 @@ import { assetPath } from "@/lib/assets";
 import { getHours, getPages, getSite } from "@/lib/content";
 
 /**
- * Schriftpaar: Manrope für Überschriften, Inter für Fliesstext. Beide werden
+ * Schriftpaar "Modern Professional" (UI/UX-Pro-Max-Datenbank): Poppins für
+ * Überschriften und Schaltflächen, Open Sans für Fliesstext. Beide werden
  * von next/font beim Build heruntergeladen und selbst ausgeliefert — kein
  * externer Font-Request zur Laufzeit, das spart Ladezeit und Cookie-Fragen.
  */
-const manrope = Manrope({
+const poppins = Poppins({
   subsets: ["latin"],
+  weight: ["500", "600", "700"],
   display: "swap",
   variable: "--font-display-family",
 });
 
-const inter = Inter({
+const openSans = Open_Sans({
   subsets: ["latin"],
   display: "swap",
   variable: "--font-sans-family",
@@ -96,7 +98,7 @@ export default async function RootLayout({
   const [site, hours, pages] = await Promise.all([getSite(), getHours(), getPages()]);
 
   return (
-    <html lang="de-CH" className={`${manrope.variable} ${inter.variable}`}>
+    <html lang="de-CH" className={`${poppins.variable} ${openSans.variable}`}>
       <head>
         {/* Ohne JavaScript bleiben alle Inhalte sichtbar. */}
         <noscript>
@@ -106,7 +108,7 @@ export default async function RootLayout({
       <body>
         <a
           href="#hauptinhalt"
-          className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[60] focus:rounded-lg focus:bg-primary focus:px-5 focus:py-3 focus:text-sm focus:font-bold focus:text-on-primary"
+          className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[60] focus:rounded-sm focus:bg-primary focus:px-5 focus:py-3 focus:text-sm focus:font-bold focus:text-on-primary"
         >
           Zum Inhalt springen
         </a>

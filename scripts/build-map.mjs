@@ -53,8 +53,8 @@ const FARBEN = {
   strasseGross: "#a9b5c6",
   bahn: "#b3bcc9",
   bahnStrich: "#ffffff",
-  kreis: "#1d4ed8",
-  marker: "#1d4ed8",
+  kreis: "#1e40af",
+  marker: "#1e40af",
   markerRand: "#ffffff",
 };
 

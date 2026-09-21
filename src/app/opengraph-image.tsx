@@ -34,7 +34,7 @@ export default async function OpengraphImage() {
           flexDirection: "column",
           justifyContent: "space-between",
           background:
-            "radial-gradient(900px 520px at 85% 0%, #dbe7fb 0%, #f4f7fb 55%, #ffffff 100%)",
+            "#ffffff",
           padding: 72,
           fontFamily: "sans-serif",
         }}
@@ -44,8 +44,8 @@ export default async function OpengraphImage() {
             style={{
               width: 76,
               height: 76,
-              borderRadius: 18,
-              background: "#1d4ed8",
+              borderRadius: 8,
+              background: "#1e40af",
               color: "#ffffff",
               fontSize: 46,
               fontWeight: 800,
@@ -103,7 +103,7 @@ export default async function OpengraphImage() {
             fontSize: 26,
           }}
         >
-          <div style={{ width: 56, height: 4, background: "#1d4ed8" }} />
+          <div style={{ width: 56, height: 6, background: "#c2410c" }} />
           <span>
             {`${site.address.street}, ${site.address.zip} ${site.address.city}`}
           </span>

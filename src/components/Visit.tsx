@@ -111,7 +111,7 @@ export function Visit({ content, site, hours }: VisitProps) {
                     {content.gebiet.map((ort) => (
                       <li
                         key={ort}
-                        className="rounded-full border border-border bg-surface-warm px-2.5 py-1 text-sm font-medium"
+                        className="rounded-sm border border-border bg-surface-warm px-2.5 py-1 text-sm font-medium"
                       >
                         {ort}
                       </li>

@@ -226,7 +226,17 @@ export interface HeroContent {
 }
 
 /** Icons stammen aus `src/components/Icon.tsx` (Phosphor). */
-export type IconName = "flame" | "leaf" | "clock" | "train" | "hand" | "sparkle" | "pin";
+export type IconName =
+  | "flame"
+  | "leaf"
+  | "clock"
+  | "train"
+  | "hand"
+  | "sparkle"
+  | "pin"
+  | "shield"
+  | "users"
+  | "calendar";
 
 /**
  * Farbrolle einer Karte. Die drei Werte entsprechen den Akzentfarben der
@@ -270,6 +280,14 @@ export interface AblaufContent {
   eyebrow: string;
   title: string;
   steps: AblaufStep[];
+}
+
+/** Vertrauensleiste direkt unter dem Hero: vier harte Fakten mit Symbol. */
+export interface ProofItem {
+  id: string;
+  icon: IconName;
+  value: string;
+  label: string;
 }
 
 /** Aufforderung zur Offerte: Telefon plus die Angaben, die wir brauchen. */
@@ -316,6 +334,7 @@ export interface PagesContent {
   hero: HeroContent;
   /** Nicht mehr verwendet (früher Laufband unter dem Hero); bleibt leer. */
   valueStrip: string[];
+  proof: ProofItem[];
   menuSection: MenuSectionContent;
   ablauf: AblaufContent;
   offerte: OfferteContent;
